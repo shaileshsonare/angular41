@@ -1,0 +1,19 @@
+
+  header works!
+  {{counter}}
+  <span *ngIf="visible">This works</span>
+  <button (click)="toggleSpan()">Click Me</button>
+  {{fruit_list}}
+
+<ul>
+  <li *ngFor="let x of fruit_list">{{x}}</li>
+</ul>
+
+<div class="card">
+  <ng-container *ngFor="let contact of data.contacts">
+    <h2>{{contact.name}}</h2>
+    <h2>{{contact.location}}</h2>
+    <h2>{{contact.role}}</h2>
+    <h2>{{contact.company}}</h2>
+  </ng-container>
+</div>
